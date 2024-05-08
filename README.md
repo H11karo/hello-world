@@ -1,2 +1,2 @@
 # hello-world
-just for practice
+This is just for practicing how github works
