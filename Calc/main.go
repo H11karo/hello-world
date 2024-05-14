@@ -6,35 +6,35 @@ import (
 
 func main() {
 
-	var n1, n2 int64
-	var o string
+	var number1, number2 int64
+	var operator string
 
 	fmt.Println("Hello, this is a calculator")
 	fmt.Println("First Number:")
-	fmt.Scanln(&n1)
+	fmt.Scanln(&number1)
 
 	fmt.Println("+,-,*,/")
-	fmt.Scanln(&o)
+	fmt.Scanln(&operator)
 
 	fmt.Println("Second Number:")
-	fmt.Scanln(&n2)
+	fmt.Scanln(&number2)
 
 	switch o {
 
 	case "+":
-		fmt.Printf("%d %s %d = %d", n1, or, n2, n1+n2)
+		fmt.Printf("%d %s %d = %d", number1, operator, number2, number1+number2)
 
 	case "-":
-		fmt.Printf("%d %s %d = %d", n1, o, n2, n1-n2)
+		fmt.Printf("%d %s %d = %d", number1, operator, number2, number1-number2)
 
 	case "*":
-		fmt.Printf("%d %s %d = %d", n1, o, n2, n1*n2)
+		fmt.Printf("%d %s %d = %d", number1, operator, number2, number1*number2)
 
 	case "/":
-		if n2 == 0 {
+		if number2 == 0 {
 			fmt.Println("That's not possible, dumbass")
 		} else {
-			fmt.Printf("%d %s %d = %d", n1, o, n2, n1/n2)
+			fmt.Printf("%d %s %d = %d", number1, operator, number2, number1/number2)
 		}
 	default:
 		fmt.Println("Please choose a valid operator")
